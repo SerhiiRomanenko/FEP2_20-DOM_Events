@@ -1,0 +1,18 @@
+body {
+  margin: 0 auto;
+  text-align: center; }
+
+.slider__image {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+img {
+  width: 700px;
+  height: 400px;
+  display: none;
+  visibility: hidden; }
+  img.active {
+    display: inline-block;
+    visibility: visible; }
+
+/*# sourceMappingURL=style.css.map */
