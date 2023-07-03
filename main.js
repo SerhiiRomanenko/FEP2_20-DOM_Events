@@ -20,12 +20,12 @@ sliderPrevButton.addEventListener("click", function () {
             sliderImages.children[i - 1].classList.add("active");
             sliderPrevButton.style.display = "inline-block";
             sliderNextButton.style.display = "inline-block";
-            return;
+            break;
         } else if (sliderImages.children[1].classList.contains("active")) {
             sliderPrevButton.style.display = "none";
             sliderImages.children[1].classList.remove("active");
             sliderImages.children[0].classList.add("active");
-            return;
+            break;
         }
     }
 })
@@ -38,13 +38,13 @@ sliderNextButton.addEventListener("click", function () {
             sliderImages.children[i + 1].classList.add("active");
             sliderNextButton.style.display = "inline-block";
             sliderPrevButton.style.display = "inline-block";
-            return;
+            break;
         }
         else if (sliderImages.children[sliderImages.children.length - 2].classList.contains("active")) {
             sliderImages.children[sliderImages.children.length - 2].classList.remove("active");
             sliderImages.children[sliderImages.children.length - 1].classList.add("active");
             sliderNextButton.style.display = "none";
-            return;
+            break;
         }
     }
 })
